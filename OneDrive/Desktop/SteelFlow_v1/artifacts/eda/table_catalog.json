@@ -1,0 +1,6383 @@
+[
+  {
+    "table": "accounts_payable",
+    "file": "accounts_payable.parquet",
+    "rows": 1446,
+    "columns": [
+      {
+        "name": "ap_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "purchase_order_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "po_line_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "due_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "amount_ex_gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "input_gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "scheduled_payment_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "paid_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "outstanding_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_status",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "ap_id": 0,
+      "purchase_order_id": 0,
+      "po_line_id": 0,
+      "supplier_id": 0,
+      "invoice_date": 0,
+      "due_date": 0,
+      "amount_ex_gst_inr": 0,
+      "input_gst_inr": 0,
+      "amount_inr": 0,
+      "scheduled_payment_timestamp": 0,
+      "paid_amount_inr": 0,
+      "outstanding_amount_inr": 0,
+      "payment_status": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "accounts_receivable",
+    "file": "accounts_receivable.parquet",
+    "rows": 64554,
+    "columns": [
+      {
+        "name": "ar_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "contractual_due_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_payment_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "scheduled_actual_payment_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_payment_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "total_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "settlement_credit_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "settled_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "write_off_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "outstanding_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_status",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "dispute_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_utilization_at_invoice",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_state_effect_days",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "near_limit_effect_days",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "project_active_effect_days",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "recent_credit_block_effect_days",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "project_active_at_invoice",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "recently_credit_blocked",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "ar_id": 0,
+      "invoice_id": 0,
+      "customer_id": 0,
+      "invoice_date": 0,
+      "contractual_due_date": 0,
+      "expected_payment_timestamp": 0,
+      "scheduled_actual_payment_timestamp": 0,
+      "actual_payment_timestamp": 2623,
+      "total_amount_inr": 0,
+      "settlement_credit_amount_inr": 0,
+      "settled_amount_inr": 0,
+      "write_off_amount_inr": 0,
+      "outstanding_amount_inr": 0,
+      "payment_status": 0,
+      "dispute_id": 63273,
+      "credit_utilization_at_invoice": 0,
+      "payment_state_effect_days": 0,
+      "near_limit_effect_days": 0,
+      "project_active_effect_days": 0,
+      "recent_credit_block_effect_days": 0,
+      "project_active_at_invoice": 0,
+      "recently_credit_blocked": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "backorders_cancellations_returns",
+    "file": "backorders_cancellations_returns.parquet",
+    "rows": 110196,
+    "columns": [
+      {
+        "name": "bc_event_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_line_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "event_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "event_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "reason_code",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "related_shipment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "resolved_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "return_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "accepted_back_into_stock_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_note_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "return_storage_node_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "return_storage_node_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "bc_event_id": 0,
+      "order_id": 0,
+      "order_line_id": 0,
+      "event_type": 0,
+      "quantity_kg": 0,
+      "event_date": 0,
+      "reason_code": 0,
+      "related_shipment_id": 44522,
+      "resolved_date": 44443,
+      "return_id": 109076,
+      "accepted_back_into_stock_kg": 109076,
+      "credit_note_id": 109076,
+      "return_storage_node_id": 109076,
+      "return_storage_node_type": 109076
+    }
+  },
+  {
+    "table": "bad_debt_writeoffs",
+    "file": "bad_debt_writeoffs.parquet",
+    "rows": 319,
+    "columns": [
+      {
+        "name": "writeoff_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "writeoff_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "write_off_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "reason",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "writeoff_id": 0,
+      "invoice_id": 0,
+      "customer_id": 0,
+      "writeoff_date": 0,
+      "write_off_amount_inr": 0,
+      "reason": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "business_events",
+    "file": "business_events.parquet",
+    "rows": 5,
+    "columns": [
+      {
+        "name": "event_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "event_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "start_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "end_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "observable_in_data",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "event_id": 0,
+      "event_type": 0,
+      "start_date": 0,
+      "end_date": 0,
+      "severity_0_1": 0,
+      "observable_in_data": 0
+    }
+  },
+  {
+    "table": "carrier_events",
+    "file": "carrier_events.parquet",
+    "rows": 30,
+    "columns": [
+      {
+        "name": "carrier_event_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "event_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "start_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "end_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "observable_in_data",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "notes",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "carrier_event_id": 0,
+      "carrier_id": 0,
+      "event_type": 0,
+      "start_date": 0,
+      "end_date": 0,
+      "severity_0_1": 0,
+      "observable_in_data": 0,
+      "notes": 0
+    }
+  },
+  {
+    "table": "carrier_rate_cards",
+    "file": "carrier_rate_cards.parquet",
+    "rows": 1011,
+    "columns": [
+      {
+        "name": "rate_card_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "rate_per_tonne_km",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "effective_start",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "effective_end",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "minimum_charge_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "rate_structure",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "base_charge_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "per_km_rate_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "per_tonne_rate_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "handling_charge_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "fuel_surcharge_pct",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "discount_pct",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "toll_treatment",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "toll_rate_inr_per_km",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "rate_card_id": 0,
+      "carrier_id": 0,
+      "route_id": 0,
+      "rate_per_tonne_km": 0,
+      "effective_start": 0,
+      "effective_end": 0,
+      "minimum_charge_inr": 0,
+      "rate_structure": 0,
+      "base_charge_inr": 0,
+      "per_km_rate_inr": 0,
+      "per_tonne_rate_inr": 0,
+      "handling_charge_inr": 0,
+      "fuel_surcharge_pct": 0,
+      "discount_pct": 0,
+      "toll_treatment": 0,
+      "toll_rate_inr_per_km": 0
+    }
+  },
+  {
+    "table": "carrier_route_eligibility",
+    "file": "carrier_route_eligibility.parquet",
+    "rows": 1080,
+    "columns": [
+      {
+        "name": "carrier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_eligible",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "effective_start",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "effective_end",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "carrier_id": 0,
+      "route_id": 0,
+      "is_eligible": 0,
+      "effective_start": 0,
+      "effective_end": 0
+    }
+  },
+  {
+    "table": "carrier_route_month_performance",
+    "file": "carrier_route_month_performance.parquet",
+    "rows": 22833,
+    "columns": [
+      {
+        "name": "carrier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "dispatch_month",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipment_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "late_shipment_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "requested_late_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "late_rate",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "requested_late_rate",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "mean_distance_km",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "median_actual_transit_hours",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "billed_freight_cost_inr_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "carrier_id": 0,
+      "route_id": 0,
+      "dispatch_month": 0,
+      "shipment_count": 0,
+      "late_shipment_count": 0,
+      "requested_late_count": 0,
+      "late_rate": 0,
+      "requested_late_rate": 0,
+      "mean_distance_km": 0,
+      "median_actual_transit_hours": 0,
+      "billed_freight_cost_inr_ex_gst": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "carriers",
+    "file": "carriers.parquet",
+    "rows": 15,
+    "columns": [
+      {
+        "name": "carrier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_name",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "reliability_band",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "base_rate_per_tonne_km",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "base_delay_risk",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "capacity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "gst_rate",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "carrier_id": 0,
+      "carrier_name": 0,
+      "reliability_band": 0,
+      "base_rate_per_tonne_km": 0,
+      "base_delay_risk": 0,
+      "capacity_kg": 0,
+      "gst_rate": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "cash_receipts",
+    "file": "cash_receipts.parquet",
+    "rows": 85968,
+    "columns": [
+      {
+        "name": "cash_receipt_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "receipt_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_method",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "cash_receipt_id": 0,
+      "invoice_id": 0,
+      "customer_id": 0,
+      "receipt_timestamp": 0,
+      "payment_date": 0,
+      "payment_amount_inr": 0,
+      "payment_method": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "credit_notes",
+    "file": "credit_notes.parquet",
+    "rows": 1626,
+    "columns": [
+      {
+        "name": "credit_note_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_note_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_note_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "amount_ex_gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "total_credit_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "reason_code",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "credit_note_id": 0,
+      "invoice_id": 0,
+      "shipment_id": 0,
+      "customer_id": 0,
+      "credit_note_date": 0,
+      "credit_note_type": 0,
+      "quantity_kg": 0,
+      "amount_ex_gst_inr": 0,
+      "gst_inr": 0,
+      "total_credit_inr": 0,
+      "reason_code": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "customer_credit_state",
+    "file": "customer_credit_state.parquet",
+    "rows": 410850,
+    "columns": [
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "outstanding_balance_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_limit_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "available_credit_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_credit_blocked",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_terms_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "days_since_last_payment",
+        "type": "INTEGER",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "customer_id": 0,
+      "date": 0,
+      "outstanding_balance_inr": 0,
+      "credit_limit_inr": 0,
+      "available_credit_inr": 0,
+      "is_credit_blocked": 0,
+      "payment_terms_days": 0,
+      "days_since_last_payment": 0
+    }
+  },
+  {
+    "table": "customer_default_events",
+    "file": "customer_default_events.parquet",
+    "rows": 18,
+    "columns": [
+      {
+        "name": "default_event_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "default_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "trigger_invoice_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "reason",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "default_probability",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "base_default_probability",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "escalated_monthly_probability",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "overdue_invoices_60d_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "slow_payer_non_reversion_months",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "default_event_id": 0,
+      "customer_id": 0,
+      "default_date": 0,
+      "trigger_invoice_id": 0,
+      "reason": 0,
+      "default_probability": 0,
+      "base_default_probability": 0,
+      "escalated_monthly_probability": 0,
+      "overdue_invoices_60d_count": 0,
+      "slow_payer_non_reversion_months": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "customer_invoices",
+    "file": "customer_invoices.parquet",
+    "rows": 64554,
+    "columns": [
+      {
+        "name": "invoice_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_line_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "delivery_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "unit_selling_price_per_kg_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "revenue_ex_gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "output_gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "total_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_terms_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "contractual_due_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_currency",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "invoice_id": 0,
+      "shipment_id": 0,
+      "order_id": 0,
+      "order_line_id": 0,
+      "customer_id": 0,
+      "invoice_date": 0,
+      "invoice_timestamp": 0,
+      "delivery_date": 0,
+      "invoice_quantity_kg": 0,
+      "unit_selling_price_per_kg_ex_gst": 0,
+      "revenue_ex_gst_inr": 0,
+      "output_gst_inr": 0,
+      "total_amount_inr": 0,
+      "payment_terms_days": 0,
+      "contractual_due_date": 0,
+      "invoice_currency": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "customer_order_lines",
+    "file": "customer_order_lines.parquet",
+    "rows": 92751,
+    "columns": [
+      {
+        "name": "order_line_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_segment_at_order",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "requested_delivery_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "priority",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "project_active_at_order",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "product_family",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "preferred_warehouse_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_allocation_method",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "requested_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "ordered_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_reduced_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_held_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_limit_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_exposure_before_order_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_available_before_order_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_check_method",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_payment_delay_days_at_check",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipped_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "open_backorder_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "cancelled_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "estimated_material_cost_per_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "estimated_energy_cost_per_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "estimated_labour_cost_per_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "estimated_overhead_cost_per_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "estimated_manufacturing_cogs_per_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_gross_margin_pct",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "list_price_per_kg_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "contract_discount_pct",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "unit_selling_price_per_kg_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "requested_line_value_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "line_revenue_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "line_manufacturing_cogs",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "gross_profit_before_outbound_freight",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "realized_gross_margin_pct",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "price_source",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "fulfilment_status",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "planned_dispatch_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipped_weight_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_weight_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "contract_order_flag",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_channel",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_terms_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "order_line_id": 0,
+      "order_id": 0,
+      "customer_id": 0,
+      "customer_segment_at_order": 0,
+      "demand_centre_id": 0,
+      "order_date": 0,
+      "requested_delivery_date": 0,
+      "priority": 0,
+      "project_active_at_order": 0,
+      "sku_id": 0,
+      "product_family": 0,
+      "factory_id": 0,
+      "preferred_warehouse_id": 0,
+      "factory_allocation_method": 0,
+      "requested_quantity_kg": 0,
+      "ordered_quantity_kg": 0,
+      "credit_reduced_quantity_kg": 0,
+      "credit_held_quantity_kg": 0,
+      "credit_limit_inr": 0,
+      "credit_exposure_before_order_inr": 0,
+      "credit_available_before_order_inr": 0,
+      "credit_check_method": 0,
+      "expected_payment_delay_days_at_check": 0,
+      "shipped_quantity_kg": 0,
+      "open_backorder_quantity_kg": 0,
+      "cancelled_quantity_kg": 0,
+      "estimated_material_cost_per_kg": 0,
+      "estimated_energy_cost_per_kg": 0,
+      "estimated_labour_cost_per_kg": 0,
+      "estimated_overhead_cost_per_kg": 0,
+      "estimated_manufacturing_cogs_per_kg": 0,
+      "target_gross_margin_pct": 0,
+      "list_price_per_kg_ex_gst": 0,
+      "contract_discount_pct": 0,
+      "unit_selling_price_per_kg_ex_gst": 0,
+      "requested_line_value_ex_gst": 0,
+      "line_revenue_ex_gst": 0,
+      "line_manufacturing_cogs": 0,
+      "gross_profit_before_outbound_freight": 0,
+      "realized_gross_margin_pct": 0,
+      "price_source": 0,
+      "fulfilment_status": 0,
+      "planned_dispatch_date": 0,
+      "shipped_weight_kg": 0,
+      "invoice_weight_kg": 0,
+      "contract_order_flag": 0,
+      "order_channel": 0,
+      "payment_terms_days": 0
+    }
+  },
+  {
+    "table": "customer_orders",
+    "file": "customer_orders.parquet",
+    "rows": 40000,
+    "columns": [
+      {
+        "name": "order_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "requested_delivery_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "priority",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_channel",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "contract_order_flag",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "project_active_at_order",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_segment_at_order",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "line_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_value_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipped_value_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "ordered_weight_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "requested_weight_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_check_outcome",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_check_method",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_limit_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_exposure_before_order_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_available_before_order_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_requested_gross_value_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_accepted_gross_value_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_limit_breach_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_exposure_after_acceptance_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_payment_delay_days_at_check",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "accepted_order_value_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "order_id": 0,
+      "customer_id": 0,
+      "order_date": 0,
+      "requested_delivery_date": 0,
+      "priority": 0,
+      "order_channel": 0,
+      "contract_order_flag": 0,
+      "project_active_at_order": 0,
+      "customer_segment_at_order": 0,
+      "demand_centre_id": 0,
+      "line_count": 0,
+      "order_value_ex_gst": 0,
+      "shipped_value_ex_gst": 0,
+      "ordered_weight_kg": 0,
+      "requested_weight_kg": 0,
+      "credit_check_outcome": 0,
+      "credit_check_method": 0,
+      "credit_limit_inr": 0,
+      "credit_exposure_before_order_inr": 0,
+      "credit_available_before_order_inr": 0,
+      "credit_requested_gross_value_inr": 0,
+      "credit_accepted_gross_value_inr": 0,
+      "credit_limit_breach_amount_inr": 0,
+      "credit_exposure_after_acceptance_inr": 0,
+      "expected_payment_delay_days_at_check": 0,
+      "synthetic_record": 0,
+      "accepted_order_value_ex_gst": 0
+    }
+  },
+  {
+    "table": "customer_payment_behaviour_monthly",
+    "file": "customer_payment_behaviour_monthly.parquet",
+    "rows": 13500,
+    "columns": [
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "month",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_delay_days_mean",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "drift_component",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "seasonal_component",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "state_component",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "slow_payer_episode_active",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "slow_payer_non_reversion_active",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "slow_payer_extra_days",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "mean_reversion_effect_days",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "rating_at_month",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoices_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "outstanding_mean",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "customer_id": 0,
+      "month": 0,
+      "expected_delay_days_mean": 0,
+      "drift_component": 0,
+      "seasonal_component": 0,
+      "state_component": 0,
+      "slow_payer_episode_active": 0,
+      "slow_payer_non_reversion_active": 0,
+      "slow_payer_extra_days": 0,
+      "mean_reversion_effect_days": 0,
+      "rating_at_month": 0,
+      "synthetic_record": 0,
+      "invoices_count": 0,
+      "outstanding_mean": 0
+    }
+  },
+  {
+    "table": "customers",
+    "file": "customers.parquet",
+    "rows": 225,
+    "columns": [
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_name",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_segment",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_limit_inr",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_terms_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_risk_band",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "avg_days_to_pay_initial",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "customer_id": 0,
+      "customer_name": 0,
+      "customer_segment": 0,
+      "demand_centre_id": 0,
+      "credit_limit_inr": 0,
+      "payment_terms_days": 0,
+      "customer_risk_band": 0,
+      "avg_days_to_pay_initial": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "daily_demand_by_sku_centre",
+    "file": "daily_demand_by_sku_centre.parquet",
+    "rows": 876480,
+    "columns": [
+      {
+        "name": "target_date",
+        "type": "TIMESTAMP",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "gross_requested_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "request_line_count",
+        "type": "INTEGER",
+        "nullable": "YES"
+      },
+      {
+        "name": "accepted_order_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "product_family",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_monsoon_season",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "weekday",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "month",
+        "type": "TINYINT",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "target_date": 0,
+      "demand_centre_id": 0,
+      "sku_id": 0,
+      "gross_requested_quantity_kg": 0,
+      "request_line_count": 0,
+      "accepted_order_quantity_kg": 0,
+      "demand_kg": 0,
+      "product_family": 0,
+      "is_monsoon_season": 0,
+      "weekday": 0,
+      "month": 0
+    }
+  },
+  {
+    "table": "delivery_outcomes",
+    "file": "delivery_outcomes.parquet",
+    "rows": 64554,
+    "columns": [
+      {
+        "name": "delivery_outcome_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_line_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "dispatch_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_arrival_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_arrival_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "promised_arrival_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipment_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "delivered_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "short_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_late",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_late_vs_promised",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_late_vs_requested",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "delivery_status",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "delivery_outcome_id": 0,
+      "shipment_id": 0,
+      "order_id": 0,
+      "order_line_id": 0,
+      "dispatch_timestamp": 0,
+      "actual_arrival_timestamp": 0,
+      "actual_arrival_date": 0,
+      "promised_arrival_timestamp": 0,
+      "shipment_quantity_kg": 0,
+      "delivered_quantity_kg": 0,
+      "short_quantity_kg": 0,
+      "is_late": 0,
+      "is_late_vs_promised": 0,
+      "is_late_vs_requested": 0,
+      "delivery_status": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "demand_centres",
+    "file": "demand_centres.parquet",
+    "rows": 12,
+    "columns": [
+      {
+        "name": "demand_centre_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "region",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_region",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "latitude",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "longitude",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "demand_centre_id": 0,
+      "city": 0,
+      "region": 0,
+      "factory_region": 0,
+      "latitude": 0,
+      "longitude": 0
+    }
+  },
+  {
+    "table": "dispatch_delay_model_dataset",
+    "file": "dispatch_delay_model_dataset.parquet",
+    "rows": 64554,
+    "columns": [
+      {
+        "name": "shipment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "dispatch_timestamp",
+        "type": "TIMESTAMP_NS",
+        "nullable": "YES"
+      },
+      {
+        "name": "dispatch_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "distance_km",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipment_weight_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "vehicle_capacity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "booking_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "spot_surcharge_multiplier",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_booking_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "quoted_freight_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_congestion_index_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_difficulty_index",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "rain_forecast_severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "known_disruption_severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "capacity_pressure_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_monsoon_season",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_event_active",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_event_severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_base_delay_risk",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_historical_late_rate_90d",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_historical_shipments_90d",
+        "type": "INTEGER",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_route_historical_late_rate_90d",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_route_historical_shipments_90d",
+        "type": "INTEGER",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_is_late",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "split",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "prediction_moment",
+        "type": "TIMESTAMP_NS",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "shipment_id": 0,
+      "dispatch_timestamp": 0,
+      "dispatch_date": 0,
+      "carrier_id": 0,
+      "route_id": 0,
+      "route_type": 0,
+      "distance_km": 0,
+      "shipment_weight_kg": 0,
+      "vehicle_capacity_kg": 0,
+      "booking_type": 0,
+      "spot_surcharge_multiplier": 0,
+      "expected_booking_cost_inr": 0,
+      "quoted_freight_cost_inr": 0,
+      "route_congestion_index_0_1": 0,
+      "route_difficulty_index": 0,
+      "rain_forecast_severity_0_1": 0,
+      "known_disruption_severity_0_1": 0,
+      "capacity_pressure_0_1": 0,
+      "is_monsoon_season": 0,
+      "carrier_event_active": 0,
+      "carrier_event_severity_0_1": 0,
+      "carrier_base_delay_risk": 0,
+      "carrier_historical_late_rate_90d": 0,
+      "carrier_historical_shipments_90d": 0,
+      "carrier_route_historical_late_rate_90d": 0,
+      "carrier_route_historical_shipments_90d": 0,
+      "target_is_late": 0,
+      "split": 0,
+      "prediction_moment": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "dispute_events",
+    "file": "dispute_events.parquet",
+    "rows": 1281,
+    "columns": [
+      {
+        "name": "dispute_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "dispute_start_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "resolution_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "dispute_reason",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "disputed_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "resolution_outcome",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "scheduled_payment_after_resolution_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "dispute_id": 0,
+      "invoice_id": 0,
+      "customer_id": 0,
+      "dispute_start_date": 0,
+      "resolution_date": 0,
+      "dispute_reason": 0,
+      "disputed_amount_inr": 0,
+      "resolution_outcome": 0,
+      "scheduled_payment_after_resolution_days": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "factories",
+    "file": "factories.parquet",
+    "rows": 2,
+    "columns": [
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_name",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "region",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "latitude",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "longitude",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "daily_capacity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "daily_labour_hours_available",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "finished_goods_storage_capacity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "factory_id": 0,
+      "factory_name": 0,
+      "region": 0,
+      "city": 0,
+      "latitude": 0,
+      "longitude": 0,
+      "daily_capacity_kg": 0,
+      "daily_labour_hours_available": 0,
+      "finished_goods_storage_capacity_kg": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "factory_allocation_decisions",
+    "file": "factory_allocation_decisions.parquet",
+    "rows": 92751,
+    "columns": [
+      {
+        "name": "allocation_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_line_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "candidate_factory_ids",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "chosen_factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_distance_km_to_factory_west",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_distance_km_to_factory_east",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "process_cost_factor_west",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "process_cost_factor_east",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "score_west",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "score_east",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "decision_method",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "decision_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "allocation_id": 0,
+      "order_line_id": 0,
+      "candidate_factory_ids": 0,
+      "chosen_factory_id": 0,
+      "route_distance_km_to_factory_west": 0,
+      "route_distance_km_to_factory_east": 0,
+      "process_cost_factor_west": 0,
+      "process_cost_factor_east": 0,
+      "score_west": 0,
+      "score_east": 0,
+      "decision_method": 0,
+      "decision_timestamp": 0
+    }
+  },
+  {
+    "table": "factory_capacity_downtime_events",
+    "file": "factory_capacity_downtime_events.parquet",
+    "rows": 6,
+    "columns": [
+      {
+        "name": "downtime_event_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "start_ts",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "end_ts",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "reason",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "capacity_reduction_pct",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "downtime_event_id": 0,
+      "factory_id": 0,
+      "start_ts": 0,
+      "end_ts": 0,
+      "reason": 0,
+      "capacity_reduction_pct": 0
+    }
+  },
+  {
+    "table": "factory_product_capabilities",
+    "file": "factory_product_capabilities.parquet",
+    "rows": 80,
+    "columns": [
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "effective_start",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "effective_end",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "process_cost_factor",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "labour_hours_per_1000kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_active",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "factory_id": 0,
+      "sku_id": 0,
+      "effective_start": 0,
+      "effective_end": 0,
+      "process_cost_factor": 0,
+      "labour_hours_per_1000kg": 0,
+      "is_active": 0
+    }
+  },
+  {
+    "table": "feature_manifest",
+    "file": "feature_manifest.parquet",
+    "rows": 74,
+    "columns": [
+      {
+        "name": "model_dataset",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "feature_name",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "available_at_rule",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "describes",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "source_table",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "source_columns",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "feature_class",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "prediction_moment",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_only",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "model_dataset": 0,
+      "feature_name": 0,
+      "available_at_rule": 0,
+      "describes": 0,
+      "source_table": 0,
+      "source_columns": 0,
+      "feature_class": 0,
+      "prediction_moment": 0,
+      "target_only": 0
+    }
+  },
+  {
+    "table": "finished_goods_inventory_movements",
+    "file": "finished_goods_inventory_movements.parquet",
+    "rows": 212421,
+    "columns": [
+      {
+        "name": "fg_movement_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "movement_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "node_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "node_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "movement_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "quantity_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "reference_table",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "reference_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "notes",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "fg_movement_id": 0,
+      "movement_timestamp": 0,
+      "node_id": 0,
+      "node_type": 0,
+      "sku_id": 0,
+      "movement_type": 0,
+      "quantity_kg": 0,
+      "reference_table": 0,
+      "reference_id": 0,
+      "notes": 0
+    }
+  },
+  {
+    "table": "finished_goods_inventory_snapshots",
+    "file": "finished_goods_inventory_snapshots.parquet",
+    "rows": 525840,
+    "columns": [
+      {
+        "name": "node_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "snapshot_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "node_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "quantity_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "open_reserved_quantity_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "atp_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "node_id": 0,
+      "sku_id": 0,
+      "snapshot_date": 0,
+      "node_type": 0,
+      "quantity_kg": 0,
+      "open_reserved_quantity_kg": 0,
+      "atp_kg": 0
+    }
+  },
+  {
+    "table": "forecast_features_horizon_07",
+    "file": "forecast_features_horizon_07.parquet",
+    "rows": 873120,
+    "columns": [
+      {
+        "name": "forecast_row_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "origin_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "prediction_moment",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "feature_cutoff_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "horizon_days",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_region",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "product_family",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "seasonal_naive_lag_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "seasonal_lag_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "origin_weekday",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_weekday",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_month",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_is_monsoon",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "split",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_1d_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_1d_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_7d_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_7d_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_14d_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_14d_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_28d_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_28d_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_7d_mean_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_7d_median_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_7d_std_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_7d_sample_days",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_14d_mean_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_14d_median_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_14d_std_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_14d_sample_days",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_mean_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_median_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_std_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_sample_days",
+        "type": "TINYINT",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "forecast_row_id": 0,
+      "origin_date": 0,
+      "prediction_moment": 0,
+      "feature_cutoff_date": 0,
+      "target_date": 0,
+      "horizon_days": 0,
+      "demand_centre_id": 0,
+      "demand_centre_region": 0,
+      "sku_id": 0,
+      "product_family": 0,
+      "target_demand_kg": 0,
+      "seasonal_naive_lag_kg": 0,
+      "seasonal_lag_available": 0,
+      "origin_weekday": 0,
+      "target_weekday": 0,
+      "target_month": 0,
+      "target_is_monsoon": 0,
+      "split": 0,
+      "synthetic_record": 0,
+      "lag_1d_demand_kg": 0,
+      "lag_1d_available": 0,
+      "lag_7d_demand_kg": 0,
+      "lag_7d_available": 0,
+      "lag_14d_demand_kg": 0,
+      "lag_14d_available": 0,
+      "lag_28d_demand_kg": 0,
+      "lag_28d_available": 0,
+      "trailing_7d_mean_demand_kg": 0,
+      "trailing_7d_median_demand_kg": 0,
+      "trailing_7d_std_demand_kg": 0,
+      "trailing_7d_sample_days": 0,
+      "trailing_14d_mean_demand_kg": 0,
+      "trailing_14d_median_demand_kg": 0,
+      "trailing_14d_std_demand_kg": 0,
+      "trailing_14d_sample_days": 0,
+      "trailing_28d_mean_demand_kg": 0,
+      "trailing_28d_median_demand_kg": 0,
+      "trailing_28d_std_demand_kg": 0,
+      "trailing_28d_sample_days": 0
+    }
+  },
+  {
+    "table": "forecast_features_horizon_14",
+    "file": "forecast_features_horizon_14.parquet",
+    "rows": 869760,
+    "columns": [
+      {
+        "name": "forecast_row_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "origin_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "prediction_moment",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "feature_cutoff_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "horizon_days",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_region",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "product_family",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "seasonal_naive_lag_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "seasonal_lag_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "origin_weekday",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_weekday",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_month",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_is_monsoon",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "split",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_1d_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_1d_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_7d_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_7d_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_14d_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_14d_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_28d_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_28d_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_7d_mean_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_7d_median_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_7d_std_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_7d_sample_days",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_14d_mean_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_14d_median_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_14d_std_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_14d_sample_days",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_mean_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_median_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_std_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_sample_days",
+        "type": "TINYINT",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "forecast_row_id": 0,
+      "origin_date": 0,
+      "prediction_moment": 0,
+      "feature_cutoff_date": 0,
+      "target_date": 0,
+      "horizon_days": 0,
+      "demand_centre_id": 0,
+      "demand_centre_region": 0,
+      "sku_id": 0,
+      "product_family": 0,
+      "target_demand_kg": 0,
+      "seasonal_naive_lag_kg": 0,
+      "seasonal_lag_available": 0,
+      "origin_weekday": 0,
+      "target_weekday": 0,
+      "target_month": 0,
+      "target_is_monsoon": 0,
+      "split": 0,
+      "synthetic_record": 0,
+      "lag_1d_demand_kg": 0,
+      "lag_1d_available": 0,
+      "lag_7d_demand_kg": 0,
+      "lag_7d_available": 0,
+      "lag_14d_demand_kg": 0,
+      "lag_14d_available": 0,
+      "lag_28d_demand_kg": 0,
+      "lag_28d_available": 0,
+      "trailing_7d_mean_demand_kg": 0,
+      "trailing_7d_median_demand_kg": 0,
+      "trailing_7d_std_demand_kg": 0,
+      "trailing_7d_sample_days": 0,
+      "trailing_14d_mean_demand_kg": 0,
+      "trailing_14d_median_demand_kg": 0,
+      "trailing_14d_std_demand_kg": 0,
+      "trailing_14d_sample_days": 0,
+      "trailing_28d_mean_demand_kg": 0,
+      "trailing_28d_median_demand_kg": 0,
+      "trailing_28d_std_demand_kg": 0,
+      "trailing_28d_sample_days": 0
+    }
+  },
+  {
+    "table": "forecast_features_horizon_30",
+    "file": "forecast_features_horizon_30.parquet",
+    "rows": 862080,
+    "columns": [
+      {
+        "name": "forecast_row_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "origin_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "prediction_moment",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "feature_cutoff_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "horizon_days",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_region",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "product_family",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "seasonal_naive_lag_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "seasonal_lag_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "origin_weekday",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_weekday",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_month",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_is_monsoon",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "split",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_1d_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_1d_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_7d_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_7d_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_14d_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_14d_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_28d_demand_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "lag_28d_available",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_7d_mean_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_7d_median_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_7d_std_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_7d_sample_days",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_14d_mean_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_14d_median_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_14d_std_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_14d_sample_days",
+        "type": "TINYINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_mean_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_median_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_std_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_sample_days",
+        "type": "TINYINT",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "forecast_row_id": 0,
+      "origin_date": 0,
+      "prediction_moment": 0,
+      "feature_cutoff_date": 0,
+      "target_date": 0,
+      "horizon_days": 0,
+      "demand_centre_id": 0,
+      "demand_centre_region": 0,
+      "sku_id": 0,
+      "product_family": 0,
+      "target_demand_kg": 0,
+      "seasonal_naive_lag_kg": 0,
+      "seasonal_lag_available": 0,
+      "origin_weekday": 0,
+      "target_weekday": 0,
+      "target_month": 0,
+      "target_is_monsoon": 0,
+      "split": 0,
+      "synthetic_record": 0,
+      "lag_1d_demand_kg": 0,
+      "lag_1d_available": 0,
+      "lag_7d_demand_kg": 0,
+      "lag_7d_available": 0,
+      "lag_14d_demand_kg": 0,
+      "lag_14d_available": 0,
+      "lag_28d_demand_kg": 0,
+      "lag_28d_available": 0,
+      "trailing_7d_mean_demand_kg": 0,
+      "trailing_7d_median_demand_kg": 0,
+      "trailing_7d_std_demand_kg": 0,
+      "trailing_7d_sample_days": 0,
+      "trailing_14d_mean_demand_kg": 0,
+      "trailing_14d_median_demand_kg": 0,
+      "trailing_14d_std_demand_kg": 0,
+      "trailing_14d_sample_days": 0,
+      "trailing_28d_mean_demand_kg": 0,
+      "trailing_28d_median_demand_kg": 0,
+      "trailing_28d_std_demand_kg": 0,
+      "trailing_28d_sample_days": 0
+    }
+  },
+  {
+    "table": "freight_cost_benchmarks",
+    "file": "freight_cost_benchmarks.parquet",
+    "rows": 64554,
+    "columns": [
+      {
+        "name": "shipment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "weight_band",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "load_class",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "urgency_band",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "toll_treatment",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_contract_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_booking_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "quoted_freight_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_billed_freight_cost_inr_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "residual_inr_vs_expected_booking",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "peer_median_residual_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "peer_mad_residual_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "comparable_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "robust_z_score",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "rule_flags_json",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "model_flag",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "review_flag",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "review_reason",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "shipment_id": 0,
+      "route_id": 0,
+      "carrier_id": 0,
+      "weight_band": 0,
+      "load_class": 0,
+      "urgency_band": 0,
+      "toll_treatment": 0,
+      "expected_contract_cost_inr": 0,
+      "expected_booking_cost_inr": 0,
+      "quoted_freight_cost_inr": 0,
+      "actual_billed_freight_cost_inr_ex_gst": 0,
+      "residual_inr_vs_expected_booking": 0,
+      "peer_median_residual_inr": 0,
+      "peer_mad_residual_inr": 0,
+      "comparable_count": 0,
+      "robust_z_score": 604,
+      "rule_flags_json": 0,
+      "model_flag": 0,
+      "review_flag": 0,
+      "review_reason": 0
+    }
+  },
+  {
+    "table": "freight_cost_model_dataset",
+    "file": "freight_cost_model_dataset.parquet",
+    "rows": 64554,
+    "columns": [
+      {
+        "name": "freight_invoice_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "quote_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "booking_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "spot_surcharge_multiplier",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_booking_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "quoted_freight_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_actual_billed_freight_cost_inr_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "distance_km",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipment_weight_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "vehicle_capacity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_congestion_index_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_difficulty_index",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "rain_forecast_severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "known_disruption_severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "capacity_pressure_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_monsoon_season",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_base_delay_risk",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "split",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "prediction_moment",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "freight_invoice_id": 0,
+      "shipment_id": 0,
+      "quote_timestamp": 0,
+      "booking_type": 0,
+      "spot_surcharge_multiplier": 0,
+      "expected_booking_cost_inr": 0,
+      "quoted_freight_cost_inr": 0,
+      "target_actual_billed_freight_cost_inr_ex_gst": 0,
+      "carrier_id": 0,
+      "route_id": 0,
+      "route_type": 0,
+      "distance_km": 0,
+      "shipment_weight_kg": 0,
+      "vehicle_capacity_kg": 0,
+      "route_congestion_index_0_1": 0,
+      "route_difficulty_index": 0,
+      "rain_forecast_severity_0_1": 0,
+      "known_disruption_severity_0_1": 0,
+      "capacity_pressure_0_1": 0,
+      "is_monsoon_season": 0,
+      "carrier_base_delay_risk": 0,
+      "split": 0,
+      "prediction_moment": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "freight_invoice_anomaly_audit",
+    "file": "freight_invoice_anomaly_audit.parquet",
+    "rows": 64554,
+    "columns": [
+      {
+        "name": "freight_invoice_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "injected_cost_anomaly_for_evaluation_only",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "injected_anomaly_type_for_evaluation_only",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "model_flag",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "rule_flags_json",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "precision",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "recall",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "freight_invoice_id": 0,
+      "shipment_id": 0,
+      "injected_cost_anomaly_for_evaluation_only": 0,
+      "injected_anomaly_type_for_evaluation_only": 64093,
+      "model_flag": 0,
+      "rule_flags_json": 0,
+      "precision": 0,
+      "recall": 0
+    }
+  },
+  {
+    "table": "freight_invoices",
+    "file": "freight_invoices.parquet",
+    "rows": 64554,
+    "columns": [
+      {
+        "name": "freight_invoice_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "quote_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "booking_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "spot_surcharge_multiplier",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_booking_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "quoted_freight_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_billed_freight_cost_inr_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "freight_gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "freight_total_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "freight_anomaly_injected",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "injected_anomaly_type_for_evaluation_only",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_currency",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "freight_invoice_id": 0,
+      "shipment_id": 0,
+      "carrier_id": 0,
+      "quote_timestamp": 0,
+      "invoice_timestamp": 0,
+      "booking_type": 0,
+      "spot_surcharge_multiplier": 0,
+      "expected_booking_cost_inr": 0,
+      "quoted_freight_cost_inr": 0,
+      "actual_billed_freight_cost_inr_ex_gst": 0,
+      "freight_gst_inr": 0,
+      "freight_total_inr": 0,
+      "freight_anomaly_injected": 0,
+      "injected_anomaly_type_for_evaluation_only": 64093,
+      "invoice_currency": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "goods_receipts",
+    "file": "goods_receipts.parquet",
+    "rows": 3730,
+    "columns": [
+      {
+        "name": "goods_receipt_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "purchase_order_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "po_line_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "material_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_receipt_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_receipt_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "received_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "rejected_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "accepted_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_late_receipt",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "inspection_status",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "receipt_lot_index",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_event_severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_event_type_active",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_event_delay_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_event_price_multiplier",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "goods_receipt_id": 0,
+      "purchase_order_id": 0,
+      "po_line_id": 0,
+      "factory_id": 0,
+      "supplier_id": 0,
+      "material_id": 0,
+      "expected_receipt_date": 0,
+      "actual_receipt_date": 0,
+      "received_quantity_kg": 0,
+      "rejected_quantity_kg": 0,
+      "accepted_quantity_kg": 0,
+      "is_late_receipt": 0,
+      "inspection_status": 0,
+      "receipt_lot_index": 0,
+      "supplier_event_severity_0_1": 0,
+      "supplier_event_type_active": 0,
+      "supplier_event_delay_days": 0,
+      "supplier_event_price_multiplier": 0
+    }
+  },
+  {
+    "table": "gst_payable",
+    "file": "gst_payable.parquet",
+    "rows": 62,
+    "columns": [
+      {
+        "name": "month",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "output_gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_credit_note_gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "input_gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "freight_input_gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_input_gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "net_payable_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "month": 0,
+      "output_gst_inr": 0,
+      "customer_credit_note_gst_inr": 0,
+      "input_gst_inr": 0,
+      "freight_input_gst_inr": 0,
+      "supplier_input_gst_inr": 0,
+      "net_payable_inr": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "holidays",
+    "file": "holidays.parquet",
+    "rows": 25,
+    "columns": [
+      {
+        "name": "holiday_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "holiday_name",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "region",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "holiday_date": 0,
+      "holiday_name": 0,
+      "region": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "internal_transfers",
+    "file": "internal_transfers.parquet",
+    "rows": 19799,
+    "columns": [
+      {
+        "name": "transfer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "origin_node_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "origin_node_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "destination_node_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "destination_node_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "transfer_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_arrival_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_arrival_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "distance_km",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "transfer_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "trigger_reason",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "transfer_id": 0,
+      "origin_node_id": 0,
+      "origin_node_type": 0,
+      "destination_node_id": 0,
+      "destination_node_type": 0,
+      "sku_id": 0,
+      "quantity_kg": 0,
+      "transfer_date": 0,
+      "expected_arrival_date": 0,
+      "actual_arrival_date": 0,
+      "distance_km": 0,
+      "transfer_cost_inr": 0,
+      "trigger_reason": 0
+    }
+  },
+  {
+    "table": "materials",
+    "file": "materials.parquet",
+    "rows": 4,
+    "columns": [
+      {
+        "name": "material_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "material_name",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "material_family",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "base_cost_per_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "unit",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "gst_rate",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "material_id": 0,
+      "material_name": 0,
+      "material_family": 0,
+      "base_cost_per_kg": 0,
+      "unit": 0,
+      "gst_rate": 0
+    }
+  },
+  {
+    "table": "monthly_market_indices",
+    "file": "monthly_market_indices.parquet",
+    "rows": 60,
+    "columns": [
+      {
+        "name": "month",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "hrc_index_inr_per_tonne",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "gi_coil_index_inr_per_tonne",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "cr_coil_index_inr_per_tonne",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "month": 0,
+      "hrc_index_inr_per_tonne": 0,
+      "gi_coil_index_inr_per_tonne": 0,
+      "cr_coil_index_inr_per_tonne": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "outbound_shipments",
+    "file": "outbound_shipments.parquet",
+    "rows": 64554,
+    "columns": [
+      {
+        "name": "shipment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_line_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "origin_node_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "origin_node_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "warehouse_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "distance_km",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "vehicle_capacity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipment_weight_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "vehicle_class",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "booking_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "spot_surcharge_multiplier",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_contract_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_booking_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "quoted_freight_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "rate_card_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "toll_treatment",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "estimated_toll_charge_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "linehaul_quote_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "quote_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "dispatch_timestamp",
+        "type": "TIMESTAMP_NS",
+        "nullable": "YES"
+      },
+      {
+        "name": "dispatch_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_arrival_timestamp",
+        "type": "TIMESTAMP_NS",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_arrival_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "promised_arrival_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "transit_hours",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "base_expected_transit_hours",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_transit_hours",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "sla_buffer_hours",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_congestion_index_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_difficulty_index",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "rain_forecast_severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "known_disruption_severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "capacity_pressure_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_monsoon_season",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_event_active",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_event_severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_event_type_active",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "forecast_available_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_base_delay_risk",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_late",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_late_vs_promised",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_late_vs_requested",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "delay_hours_vs_promised",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "delay_hours_vs_requested_date",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "delivered_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "short_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "freight_invoice_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "freight_anomaly_injected",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "injected_anomaly_type_for_evaluation_only",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_historical_late_rate_90d",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_historical_shipments_90d",
+        "type": "INTEGER",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_route_historical_late_rate_90d",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_route_historical_shipments_90d",
+        "type": "INTEGER",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "shipment_id": 0,
+      "order_id": 0,
+      "order_line_id": 0,
+      "customer_id": 0,
+      "sku_id": 0,
+      "origin_node_id": 0,
+      "origin_node_type": 0,
+      "factory_id": 0,
+      "warehouse_id": 37124,
+      "demand_centre_id": 0,
+      "route_id": 0,
+      "route_type": 0,
+      "distance_km": 0,
+      "carrier_id": 0,
+      "vehicle_capacity_kg": 0,
+      "shipment_weight_kg": 0,
+      "vehicle_class": 0,
+      "booking_type": 0,
+      "spot_surcharge_multiplier": 0,
+      "expected_contract_cost_inr": 0,
+      "expected_booking_cost_inr": 0,
+      "quoted_freight_cost_inr": 0,
+      "rate_card_id": 0,
+      "toll_treatment": 0,
+      "estimated_toll_charge_inr": 0,
+      "linehaul_quote_inr": 0,
+      "quote_timestamp": 0,
+      "dispatch_timestamp": 0,
+      "dispatch_date": 0,
+      "actual_arrival_timestamp": 0,
+      "actual_arrival_date": 0,
+      "promised_arrival_timestamp": 0,
+      "transit_hours": 0,
+      "base_expected_transit_hours": 0,
+      "actual_transit_hours": 0,
+      "sla_buffer_hours": 0,
+      "route_congestion_index_0_1": 0,
+      "route_difficulty_index": 0,
+      "rain_forecast_severity_0_1": 0,
+      "known_disruption_severity_0_1": 0,
+      "capacity_pressure_0_1": 0,
+      "is_monsoon_season": 0,
+      "carrier_event_active": 0,
+      "carrier_event_severity_0_1": 0,
+      "carrier_event_type_active": 0,
+      "forecast_available_timestamp": 0,
+      "carrier_base_delay_risk": 0,
+      "is_late": 0,
+      "is_late_vs_promised": 0,
+      "is_late_vs_requested": 0,
+      "delay_hours_vs_promised": 0,
+      "delay_hours_vs_requested_date": 0,
+      "delivered_quantity_kg": 0,
+      "short_quantity_kg": 0,
+      "freight_invoice_id": 0,
+      "freight_anomaly_injected": 0,
+      "injected_anomaly_type_for_evaluation_only": 64093,
+      "synthetic_record": 0,
+      "carrier_historical_late_rate_90d": 0,
+      "carrier_historical_shipments_90d": 0,
+      "carrier_route_historical_late_rate_90d": 0,
+      "carrier_route_historical_shipments_90d": 0
+    }
+  },
+  {
+    "table": "product_material_recipes",
+    "file": "product_material_recipes.parquet",
+    "rows": 50,
+    "columns": [
+      {
+        "name": "recipe_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "material_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "material_kg_per_finished_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "effective_start",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "effective_end",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "recipe_id": 0,
+      "sku_id": 0,
+      "material_id": 0,
+      "material_kg_per_finished_kg": 0,
+      "effective_start": 0,
+      "effective_end": 0
+    }
+  },
+  {
+    "table": "production_batches",
+    "file": "production_batches.parquet",
+    "rows": 44435,
+    "columns": [
+      {
+        "name": "production_batch_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "planning_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "production_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "forecast_basis",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_daily_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "forecast_source_cutoff_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_sample_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "production_review_period_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "safety_stock_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "planned_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_output_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "raw_material_input_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "capacity_available_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_safety_stock_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "net_production_need_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "production_batch_id": 0,
+      "factory_id": 0,
+      "sku_id": 0,
+      "planning_date": 0,
+      "production_timestamp": 0,
+      "forecast_basis": 0,
+      "trailing_28d_daily_demand_kg": 0,
+      "forecast_source_cutoff_date": 0,
+      "trailing_sample_count": 0,
+      "production_review_period_days": 0,
+      "safety_stock_days": 0,
+      "planned_quantity_kg": 0,
+      "actual_output_quantity_kg": 0,
+      "raw_material_input_kg": 0,
+      "capacity_available_kg": 0,
+      "target_safety_stock_kg": 0,
+      "net_production_need_kg": 0
+    }
+  },
+  {
+    "table": "production_planning_diagnostics",
+    "file": "production_planning_diagnostics.parquet",
+    "rows": 146080,
+    "columns": [
+      {
+        "name": "planning_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "forecast_source_cutoff_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_sample_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "trailing_28d_mean_daily_demand_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "production_review_period_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_forecast_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "safety_stock_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "target_safety_stock_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "combined_usable_fg_kg_before_production",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "net_production_need_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "capacity_capped_plan_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_output_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "unmet_need_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "labour_hours_available",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "planned_labour_hours",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_storage_capacity_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_storage_room_before_production_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "planning_status",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "constraint_reasons",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "planning_date": 0,
+      "factory_id": 0,
+      "sku_id": 0,
+      "forecast_source_cutoff_date": 80,
+      "trailing_sample_count": 0,
+      "trailing_28d_mean_daily_demand_kg": 0,
+      "production_review_period_days": 0,
+      "demand_forecast_kg": 0,
+      "safety_stock_days": 0,
+      "target_safety_stock_kg": 0,
+      "combined_usable_fg_kg_before_production": 0,
+      "net_production_need_kg": 0,
+      "capacity_capped_plan_kg": 0,
+      "actual_output_quantity_kg": 0,
+      "unmet_need_kg": 0,
+      "labour_hours_available": 0,
+      "planned_labour_hours": 0,
+      "factory_storage_capacity_kg": 0,
+      "factory_storage_room_before_production_kg": 0,
+      "planning_status": 0,
+      "constraint_reasons": 0
+    }
+  },
+  {
+    "table": "products",
+    "file": "products.parquet",
+    "rows": 40,
+    "columns": [
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "product_name",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "product_family",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "steel_grade",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "outer_diameter_or_section_mm",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "wall_thickness_mm",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "standard_length_m",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "unit_weight_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "base_price_per_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "base_cost_per_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "list_price_per_kg_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "sku_id": 0,
+      "product_name": 0,
+      "product_family": 0,
+      "steel_grade": 0,
+      "outer_diameter_or_section_mm": 0,
+      "wall_thickness_mm": 0,
+      "standard_length_m": 0,
+      "unit_weight_kg": 0,
+      "base_price_per_kg": 0,
+      "base_cost_per_kg": 0,
+      "list_price_per_kg_ex_gst": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "purchase_order_lines",
+    "file": "purchase_order_lines.parquet",
+    "rows": 1446,
+    "columns": [
+      {
+        "name": "po_line_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "purchase_order_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "material_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_material_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_dispatch_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_receipt_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "ordered_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "unit_price_per_kg_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "min_order_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "line_value_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "received_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "rejected_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "accepted_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "outstanding_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_event_severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_event_type_active",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_event_delay_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_event_price_multiplier",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "scheduled_actual_receipt_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_censored_at_settlement",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_receipt_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "po_line_id": 0,
+      "purchase_order_id": 0,
+      "material_id": 0,
+      "supplier_material_id": 0,
+      "supplier_dispatch_date": 0,
+      "expected_receipt_date": 0,
+      "ordered_quantity_kg": 0,
+      "unit_price_per_kg_ex_gst": 0,
+      "min_order_kg": 0,
+      "line_value_ex_gst": 0,
+      "received_quantity_kg": 0,
+      "rejected_quantity_kg": 0,
+      "accepted_quantity_kg": 0,
+      "outstanding_quantity_kg": 0,
+      "supplier_event_severity_0_1": 0,
+      "supplier_event_type_active": 0,
+      "supplier_event_delay_days": 0,
+      "supplier_event_price_multiplier": 0,
+      "scheduled_actual_receipt_date": 0,
+      "is_censored_at_settlement": 0,
+      "actual_receipt_date": 0
+    }
+  },
+  {
+    "table": "purchase_orders",
+    "file": "purchase_orders.parquet",
+    "rows": 1329,
+    "columns": [
+      {
+        "name": "purchase_order_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "purchase_order_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_dispatch_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_receipt_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_receipt_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "scheduled_actual_receipt_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "line_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "forecast_basis",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "purchase_order_value_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "purchase_order_id": 0,
+      "purchase_order_date": 0,
+      "supplier_dispatch_date": 0,
+      "factory_id": 0,
+      "supplier_id": 0,
+      "expected_receipt_date": 0,
+      "actual_receipt_date": 0,
+      "scheduled_actual_receipt_date": 0,
+      "line_count": 0,
+      "status": 0,
+      "forecast_basis": 0,
+      "purchase_order_value_ex_gst": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "quality_inspections",
+    "file": "quality_inspections.parquet",
+    "rows": 3730,
+    "columns": [
+      {
+        "name": "quality_inspection_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "goods_receipt_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "inspection_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "inspected_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "rejected_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "reject_reason",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "inspector_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "quality_inspection_id": 0,
+      "goods_receipt_id": 0,
+      "inspection_date": 0,
+      "inspected_quantity_kg": 0,
+      "rejected_quantity_kg": 0,
+      "reject_reason": 2776,
+      "inspector_id": 0
+    }
+  },
+  {
+    "table": "raw_ingestion_customer_orders",
+    "file": "raw_ingestion_customer_orders.parquet",
+    "rows": 40000,
+    "columns": [
+      {
+        "name": "order_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "requested_delivery_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "priority",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_channel",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "contract_order_flag",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "project_active_at_order",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_segment_at_order",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "line_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_value_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipped_value_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "ordered_weight_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "requested_weight_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_check_outcome",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_check_method",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_limit_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_exposure_before_order_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_available_before_order_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_requested_gross_value_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_accepted_gross_value_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_limit_breach_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "credit_exposure_after_acceptance_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_payment_delay_days_at_check",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "accepted_order_value_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "source_system",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "customer_po_reference",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "raw_priority",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "order_id": 0,
+      "customer_id": 0,
+      "order_date": 0,
+      "requested_delivery_date": 0,
+      "priority": 0,
+      "order_channel": 0,
+      "contract_order_flag": 0,
+      "project_active_at_order": 0,
+      "customer_segment_at_order": 0,
+      "demand_centre_id": 0,
+      "line_count": 0,
+      "order_value_ex_gst": 0,
+      "shipped_value_ex_gst": 0,
+      "ordered_weight_kg": 0,
+      "requested_weight_kg": 0,
+      "credit_check_outcome": 0,
+      "credit_check_method": 0,
+      "credit_limit_inr": 0,
+      "credit_exposure_before_order_inr": 0,
+      "credit_available_before_order_inr": 0,
+      "credit_requested_gross_value_inr": 0,
+      "credit_accepted_gross_value_inr": 0,
+      "credit_limit_breach_amount_inr": 0,
+      "credit_exposure_after_acceptance_inr": 0,
+      "expected_payment_delay_days_at_check": 0,
+      "synthetic_record": 0,
+      "accepted_order_value_ex_gst": 0,
+      "source_system": 0,
+      "customer_po_reference": 3186,
+      "raw_priority": 0
+    }
+  },
+  {
+    "table": "raw_ingestion_freight_invoices",
+    "file": "raw_ingestion_freight_invoices.parquet",
+    "rows": 64554,
+    "columns": [
+      {
+        "name": "freight_invoice_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "shipment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "carrier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "quote_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "booking_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "spot_surcharge_multiplier",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "expected_booking_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "quoted_freight_cost_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "actual_billed_freight_cost_inr_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "freight_gst_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "freight_total_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "freight_anomaly_injected",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "injected_anomaly_type_for_evaluation_only",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "invoice_currency",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      },
+      {
+        "name": "ingestion_batch",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "vendor_invoice_reference",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "raw_billed_cost",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "freight_invoice_id": 0,
+      "shipment_id": 0,
+      "carrier_id": 0,
+      "quote_timestamp": 0,
+      "invoice_timestamp": 0,
+      "booking_type": 0,
+      "spot_surcharge_multiplier": 0,
+      "expected_booking_cost_inr": 0,
+      "quoted_freight_cost_inr": 0,
+      "actual_billed_freight_cost_inr_ex_gst": 0,
+      "freight_gst_inr": 0,
+      "freight_total_inr": 0,
+      "freight_anomaly_injected": 0,
+      "injected_anomaly_type_for_evaluation_only": 64093,
+      "invoice_currency": 0,
+      "synthetic_record": 0,
+      "ingestion_batch": 0,
+      "vendor_invoice_reference": 1611,
+      "raw_billed_cost": 0
+    }
+  },
+  {
+    "table": "raw_material_inventory_movements",
+    "file": "raw_material_inventory_movements.parquet",
+    "rows": 58158,
+    "columns": [
+      {
+        "name": "raw_movement_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "movement_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "material_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "movement_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "quantity_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "reference_table",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "reference_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "notes",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "raw_movement_id": 0,
+      "movement_timestamp": 0,
+      "factory_id": 0,
+      "material_id": 0,
+      "movement_type": 0,
+      "quantity_kg": 0,
+      "reference_table": 0,
+      "reference_id": 0,
+      "notes": 0
+    }
+  },
+  {
+    "table": "raw_material_inventory_snapshots",
+    "file": "raw_material_inventory_snapshots.parquet",
+    "rows": 17528,
+    "columns": [
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "material_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "snapshot_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "quantity_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "factory_id": 0,
+      "material_id": 0,
+      "snapshot_date": 0,
+      "quantity_kg": 0
+    }
+  },
+  {
+    "table": "reservations",
+    "file": "reservations.parquet",
+    "rows": 129108,
+    "columns": [
+      {
+        "name": "reservation_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "reservation_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "order_line_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "node_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "reserved_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "reservation_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "reference_shipment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "reservation_id": 0,
+      "reservation_timestamp": 0,
+      "order_line_id": 0,
+      "sku_id": 0,
+      "node_id": 0,
+      "reserved_quantity_kg": 0,
+      "reservation_type": 0,
+      "reference_shipment_id": 0
+    }
+  },
+  {
+    "table": "route_conditions_daily",
+    "file": "route_conditions_daily.parquet",
+    "rows": 131472,
+    "columns": [
+      {
+        "name": "route_condition_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "condition_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "forecast_available_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "rain_forecast_severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_congestion_index_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_difficulty_index",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "known_disruption_severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_monsoon_season",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "route_condition_id": 0,
+      "route_id": 0,
+      "condition_date": 0,
+      "forecast_available_timestamp": 0,
+      "rain_forecast_severity_0_1": 0,
+      "route_congestion_index_0_1": 0,
+      "route_difficulty_index": 0,
+      "known_disruption_severity_0_1": 0,
+      "is_monsoon_season": 0
+    }
+  },
+  {
+    "table": "routes",
+    "file": "routes.parquet",
+    "rows": 72,
+    "columns": [
+      {
+        "name": "route_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "origin_node_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "origin_node_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "demand_centre_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "distance_km",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "route_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "road_speed_kmph",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "route_id": 0,
+      "origin_node_id": 0,
+      "origin_node_type": 0,
+      "demand_centre_id": 0,
+      "distance_km": 0,
+      "route_type": 0,
+      "road_speed_kmph": 0
+    }
+  },
+  {
+    "table": "scheduler_daily_runs",
+    "file": "scheduler_daily_runs.parquet",
+    "rows": 1826,
+    "columns": [
+      {
+        "name": "run_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "events_committed",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "run_date": 0,
+      "events_committed": 0,
+      "status": 0
+    }
+  },
+  {
+    "table": "scrap_sales",
+    "file": "scrap_sales.parquet",
+    "rows": 44435,
+    "columns": [
+      {
+        "name": "scrap_sale_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sale_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "material_family",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "quantity_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "price_per_kg_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "buyer_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "revenue_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "scrap_sale_id": 0,
+      "factory_id": 0,
+      "sale_date": 0,
+      "material_family": 0,
+      "quantity_kg": 0,
+      "price_per_kg_inr": 0,
+      "buyer_id": 0,
+      "revenue_inr": 0
+    }
+  },
+  {
+    "table": "supplier_cash_payments",
+    "file": "supplier_cash_payments.parquet",
+    "rows": 1446,
+    "columns": [
+      {
+        "name": "supplier_payment_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "ap_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "purchase_order_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "po_line_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_timestamp",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_amount_inr",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_method",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "supplier_payment_id": 0,
+      "ap_id": 0,
+      "purchase_order_id": 0,
+      "po_line_id": 0,
+      "supplier_id": 0,
+      "payment_timestamp": 0,
+      "payment_amount_inr": 0,
+      "payment_method": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "supplier_events",
+    "file": "supplier_events.parquet",
+    "rows": 150,
+    "columns": [
+      {
+        "name": "supplier_event_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "material_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "event_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "start_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "end_date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "severity_0_1",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "notes",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "supplier_event_id": 0,
+      "supplier_id": 0,
+      "material_id": 0,
+      "event_type": 0,
+      "start_date": 0,
+      "end_date": 0,
+      "severity_0_1": 0,
+      "notes": 0
+    }
+  },
+  {
+    "table": "supplier_material_month_performance",
+    "file": "supplier_material_month_performance.parquet",
+    "rows": 1368,
+    "columns": [
+      {
+        "name": "supplier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "material_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "receipt_month",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "receipt_lot_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "po_line_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "received_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "accepted_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "rejected_quantity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "late_receipt_count",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "late_receipt_rate",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "rejection_rate",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "supplier_id": 0,
+      "material_id": 0,
+      "receipt_month": 0,
+      "receipt_lot_count": 0,
+      "po_line_count": 0,
+      "received_quantity_kg": 0,
+      "accepted_quantity_kg": 0,
+      "rejected_quantity_kg": 0,
+      "late_receipt_count": 0,
+      "late_receipt_rate": 0,
+      "rejection_rate": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "supplier_materials",
+    "file": "supplier_materials.parquet",
+    "rows": 87,
+    "columns": [
+      {
+        "name": "supplier_material_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "material_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "min_order_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "unit_price_per_kg_ex_gst",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "effective_start",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "effective_end",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "is_active",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "supplier_material_id": 0,
+      "supplier_id": 0,
+      "material_id": 0,
+      "min_order_kg": 0,
+      "unit_price_per_kg_ex_gst": 0,
+      "effective_start": 0,
+      "effective_end": 0,
+      "is_active": 0
+    }
+  },
+  {
+    "table": "suppliers",
+    "file": "suppliers.parquet",
+    "rows": 30,
+    "columns": [
+      {
+        "name": "supplier_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "supplier_name",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "region",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "reliability_band",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "base_lead_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "capacity_monthly_tonnes",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "payment_terms_days",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "supplier_id": 0,
+      "supplier_name": 0,
+      "region": 0,
+      "reliability_band": 0,
+      "base_lead_days": 0,
+      "capacity_monthly_tonnes": 0,
+      "payment_terms_days": 0,
+      "synthetic_record": 0
+    }
+  },
+  {
+    "table": "vehicle_classes",
+    "file": "vehicle_classes.parquet",
+    "rows": 5,
+    "columns": [
+      {
+        "name": "vehicle_class",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "max_payload_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "body_type",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "toll_factor",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "vehicle_class": 0,
+      "max_payload_kg": 0,
+      "body_type": 0,
+      "toll_factor": 0
+    }
+  },
+  {
+    "table": "warehouse_stock_snapshots",
+    "file": "warehouse_stock_snapshots.parquet",
+    "rows": 350560,
+    "columns": [
+      {
+        "name": "warehouse_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "sku_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "date",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "quantity_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "capacity_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "utilisation_pct",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "atp_kg",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "warehouse_id": 0,
+      "sku_id": 0,
+      "date": 0,
+      "quantity_kg": 0,
+      "capacity_kg": 0,
+      "utilisation_pct": 0,
+      "atp_kg": 0
+    }
+  },
+  {
+    "table": "warehouses",
+    "file": "warehouses.parquet",
+    "rows": 4,
+    "columns": [
+      {
+        "name": "warehouse_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "factory_id",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "city",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "region",
+        "type": "VARCHAR",
+        "nullable": "YES"
+      },
+      {
+        "name": "latitude",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "longitude",
+        "type": "DOUBLE",
+        "nullable": "YES"
+      },
+      {
+        "name": "capacity_kg",
+        "type": "BIGINT",
+        "nullable": "YES"
+      },
+      {
+        "name": "synthetic_record",
+        "type": "BOOLEAN",
+        "nullable": "YES"
+      }
+    ],
+    "null_counts": {
+      "warehouse_id": 0,
+      "factory_id": 0,
+      "city": 0,
+      "region": 0,
+      "latitude": 0,
+      "longitude": 0,
+      "capacity_kg": 0,
+      "synthetic_record": 0
+    }
+  }
+]

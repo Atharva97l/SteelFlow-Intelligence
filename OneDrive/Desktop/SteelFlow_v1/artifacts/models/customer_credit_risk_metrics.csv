@@ -1,0 +1,3 @@
+task,positive_rate,status,pr_auc_in_sample,roc_auc_in_sample
+customer_inactivity,0.0,skipped_single_class_target,,
+credit_default,0.008888888888888889,,0.08193979933110368,0.9260089686098654
