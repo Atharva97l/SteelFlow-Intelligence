@@ -1,0 +1,47 @@
+[
+  {
+    "artifact": "credit_default_best.joblib",
+    "task": "credit_default",
+    "status": "trained_pipeline"
+  },
+  {
+    "artifact": "customer_churn_90d_best.joblib",
+    "task": "customer_churn_90d",
+    "status": "trained_pipeline"
+  },
+  {
+    "artifact": "demand_horizon_07_best.joblib",
+    "task": "demand_horizon_07",
+    "status": "trained_pipeline"
+  },
+  {
+    "artifact": "demand_horizon_14_best.joblib",
+    "task": "demand_horizon_14",
+    "status": "trained_pipeline"
+  },
+  {
+    "artifact": "demand_horizon_30_best.joblib",
+    "task": "demand_horizon_30",
+    "status": "trained_pipeline"
+  },
+  {
+    "artifact": "freight_cost_best.joblib",
+    "task": "freight_cost",
+    "status": "trained_pipeline"
+  },
+  {
+    "artifact": "inventory_stockout_best.joblib",
+    "task": "inventory_stockout",
+    "status": "trained_pipeline"
+  },
+  {
+    "artifact": "late_delivery_best.joblib",
+    "task": "late_delivery",
+    "status": "trained_pipeline"
+  },
+  {
+    "artifact": "supplier_late_receipt_best.joblib",
+    "task": "supplier_late_receipt",
+    "status": "trained_pipeline"
+  }
+]

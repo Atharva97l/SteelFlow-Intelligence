@@ -1,0 +1,43 @@
+[
+  {
+    "task": "late_delivery",
+    "model": "logistic_regression",
+    "validation_pr_auc": 0.32288900902254014,
+    "validation_roc_auc": 0.6201223003135328,
+    "validation_f1": 0.4444444444444444
+  },
+  {
+    "task": "late_delivery",
+    "model": "random_forest",
+    "validation_pr_auc": 0.31743460189078365,
+    "validation_roc_auc": 0.6088733881449606,
+    "validation_f1": 0.25710373159876754
+  },
+  {
+    "task": "late_delivery",
+    "model": "logistic_regression",
+    "split": "TEST",
+    "test_pr_auc": 0.3284945424496859,
+    "test_roc_auc": 0.6301493989298868,
+    "test_f1": 0.4425195367667828
+  },
+  {
+    "task": "freight_cost",
+    "model": "ridge",
+    "validation_mae": 189.68383249087736,
+    "validation_rmse": 411.3757123943482
+  },
+  {
+    "task": "freight_cost",
+    "model": "random_forest",
+    "validation_mae": 205.22422390812923,
+    "validation_rmse": 432.57216993303217
+  },
+  {
+    "task": "freight_cost",
+    "model": "ridge",
+    "split": "TEST",
+    "test_mae": 196.47787758257377,
+    "test_rmse": 439.6480870407598
+  }
+]

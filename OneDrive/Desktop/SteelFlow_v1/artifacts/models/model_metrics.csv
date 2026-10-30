@@ -1,0 +1,7 @@
+task,model,validation_pr_auc,validation_roc_auc,validation_f1,split,test_pr_auc,test_roc_auc,test_f1,validation_mae,validation_rmse,test_mae,test_rmse
+late_delivery,logistic_regression,0.32288900902254014,0.6201223003135328,0.4444444444444444,,,,,,,,
+late_delivery,random_forest,0.31743460189078365,0.6088733881449606,0.25710373159876754,,,,,,,,
+late_delivery,logistic_regression,,,,TEST,0.3284945424496859,0.6301493989298868,0.4425195367667828,,,,
+freight_cost,ridge,,,,,,,,189.68383249087736,411.3757123943482,,
+freight_cost,random_forest,,,,,,,,205.22422390812923,432.57216993303217,,
+freight_cost,ridge,,,,TEST,,,,,,196.47787758257377,439.6480870407598
