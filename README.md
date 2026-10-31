@@ -3,6 +3,9 @@
 
 SteelFlow Intelligence is an end-to-end data analytics and machine learning project built around a simulated steel manufacturing business.
 
+## Application Preview
+
+![SteelFlow Intelligence](artifacts/SteelFlow_LinkedIn_Carousel_Preview.png)
 The platform brings together operational data, business intelligence, predictive modeling and an interactive dashboard to explore supply chain performance and anticipate operational risks.
 
 It covers multiple aspects of manufacturing operations, including demand, sales, factories, inventory, logistics, delivery performance, suppliers, receivables and customer risk.
